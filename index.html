@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bigyan Bhaila</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Floating Particles Background -->
+    <div id="particles-js"></div>
+
+    <!-- Navigation -->
+    <nav>
+        <div class="logo">Bigyan Bhaila</div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="burger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1 class="animated-text">I Build <span class="typing"></span></h1>
+            <p>Turning ideas into <span class="highlight">interactive experiences</span> with code & creativity.</p>
+            <a href="#projects" class="btn pulse">Explore My Work</a>
+        </div>
+        <div class="hero-image">
+            <div class="glowing-circle"></div>
+            <img src="https://via.placeholder.com/400" alt="Developer Avatar">
+        </div>
+        
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <h2>My <span>Superpowers</span></h2>
+        <div class="skill-grid">
+            <div class="skill-card" data-aos="fade-up">
+                <i class="fab fa-js"></i>
+                <h3>JavaScript</h3>
+                <div class="skill-bar">
+                    <div class="skill-level" style="width: 95%"></div>
+                </div>
+            </div>
+            <div class="skill-card" data-aos="fade-up" data-aos-delay="100">
+                <i class="fab fa-react"></i>
+                <h3>React</h3>
+                <div class="skill-bar">
+                    <div class="skill-level" style="width: 90%"></div>
+                </div>
+            </div>
+            <div class="skill-card" data-aos="fade-up" data-aos-delay="200">
+                <i class="fab fa-node-js"></i>
+                <h3>Node.js</h3>
+                <div class="skill-bar">
+                    <div class="skill-level" style="width: 85%"></div>
+                </div>
+            </div>
+            <div class="skill-card" data-aos="fade-up" data-aos-delay="300">
+                <i class="fas fa-database"></i>
+                <h3>MongoDB</h3>
+                <div class="skill-bar">
+                    <div class="skill-level" style="width: 80%"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <h2>My <span>Masterpieces</span></h2>
+        <div class="project-grid">
+            <div class="project-card">
+                <div class="project-img">
+                    <img src="https://via.placeholder.com/500x300" alt="Project 1">
+                    <div class="project-overlay">
+                        <h3>AI-Powered App</h3>
+                        <a href="#" class="btn">View Project</a>
+                    </div>
+                </div>
+            </div>
+            <div class="project-card">
+                <div class="project-img">
+                    <img src="https://via.placeholder.com/500x300" alt="Project 2">
+                    <div class="project-overlay">
+                        <h3>Blockchain Platform</h3>
+                        <a href="#" class="btn">View Project</a>
+                    </div>
+                </div>
+            </div>
+            <div class="project-card">
+                <div class="project-img">
+                    <img src="https://via.placeholder.com/500x300" alt="Project 3">
+                    <div class="project-overlay">
+                        <h3>3D Game Engine</h3>
+                        <a href="#" class="btn">View Project</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <h2>Let's <span>Connect</span></h2>
+        <form class="contact-form" action="send_email.php" method="POST">
+    <input type="text" name="name" placeholder="Your Name" required>
+    <input type="email" name="email" placeholder="Your Email" required>
+    <textarea name="message" placeholder="Your Message" required></textarea>
+    
+    <!-- Honeypot Field (Anti-Spam) -->
+    <input type="text" name="_honey" style="display:none">
+    
+    <!-- reCAPTCHA (Optional) -->
+    <div class="g-recaptcha" data-sitekey="6Leg4F4rAAAAALOTB6e4ZFhBgHZ5p4w6OQjMoOSG"></div>
+    
+    <button type="submit" class="btn">Send Message <i class="fas fa-paper-plane"></i></button>
+</form>
+
+<!-- Add this before </body> if using reCAPTCHA -->
+<script src="https://www.google.com/recaptcha/api.js"></script>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="social-links">
+            <a href="#"><i class="fab fa-github"></i></a>
+            <a href="#"><i class="fab fa-linkedin"></i></a>
+            <a href="https://www.freelancer.com/u/bhailabigyan"><i class="fab fa-freelancer"></i></a>
+        </div>
+        <p>&copy; 2025 Bigyan Bhaila. All Rights Reserved.</p>
+    </footer>
+
+    <!-- Scripts -->
+     <script src="https://www.google.com/recaptcha/api.js"></script>
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script src="script.js"></script>
+</body>
+</html>
