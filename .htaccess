@@ -1,0 +1,6 @@
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    # Allow POST requests to PHP files
+    RewriteCond %{REQUEST_METHOD} !^(GET|POST) [NC]
+    RewriteRule .* - [R=405,L]
+</IfModule>
